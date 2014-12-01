@@ -17,7 +17,9 @@ namespace Jamespennell.Injection.Extensions.Console.Views.Impl
 		#region Constructors
 
 		[Inject]
-		public ConsoleMediator(ToggleSignal toggleSignal, SubmitSignal submitSignal)
+		public ConsoleMediator(
+			ToggleSignal toggleSignal, 
+			SubmitSignal submitSignal)
 		{
 			this.toggleSignal = toggleSignal;
 			this.submitSignal = submitSignal;
